@@ -4,7 +4,8 @@
 
  <img src="icon/icon_web.png">
 
-<p><b>WebVault</b> is a Flask-based web application for archiving websites. Users can save websites, manage versions, and generate websites as PDFs.</p>
+<p><b>WebVault</b> is a Flask-based web application for archiving websites. 
+Users can save websites, manage versions, and generate websites as PDFs.</p>
 
 </div>
 
