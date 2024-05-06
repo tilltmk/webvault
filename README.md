@@ -92,7 +92,7 @@ Follow these steps to set up WebVault on a Linux system:
 2. **Clone the Repository**:
    - Clone the WebVault repository from GitHub:
      ```
-     git clone [URL to WebVault repository]
+     git clone https://github.com/tilltmk/webvault
      cd WebVault
      ```
 
