@@ -1,6 +1,14 @@
-# WebVault App 🗃️
+<div align="center">
+<h1>WebVault App 🗃️</h1> 
+<h6><u>Download Websites locally and version them</u></h6>
 
-WebVault is a Flask-based web application for archiving websites. Users can save websites, manage versions, and generate websites as PDFs.
+ <img src="icon/icon (2).png">
+
+<b>WebVault</b><p> is a Flask-based web application for archiving websites. Users can save websites, manage versions, and generate websites as PDFs.</p>
+
+</div>
+
+---
 
 ## Structure 📂
 
