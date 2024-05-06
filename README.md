@@ -11,6 +11,16 @@ Users can save websites, manage versions, and generate websites as PDFs.</p>
 
 ---
 
+## Features 🔍
+
+- 🔐 User login and registration.
+- 🌐 Adding and saving URLs.
+- 📁 Downloading and saving websites.
+- 🔄 Website versioning.
+- 📊 Overview page with all archived URLs.
+- 🖥️ Browsing archived websites.
+- 📄 Saving websites as PDFs.
+
 ## Structure 📂
 
 ```
@@ -43,16 +53,6 @@ WebVault/
 - `app/routes.py`: Defines the routes and views.
 - `app/utils.py`: Helper functions for downloading and saving websites.
 - `app/templates/`: HTML templates for the user interface.
-
-## Features 🔍
-
-- 🔐 User login and registration.
-- 🌐 Adding and saving URLs.
-- 📁 Downloading and saving websites.
-- 🔄 Website versioning.
-- 📊 Overview page with all archived URLs.
-- 🖥️ Browsing archived websites.
-- 📄 Saving websites as PDFs.
 
 ## Design 🎨
 
