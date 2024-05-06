@@ -73,3 +73,55 @@ WebVault/
    ```
    pip install -r requirements.txt
    ```
+
+## Installation on Linux 🐧
+
+Follow these steps to set up WebVault on a Linux system:
+
+1. **Install Dependencies**:
+   - First, ensure that you have Python and pip installed. You can install them using your package manager. For Ubuntu, you might use:
+     ```
+     sudo apt update
+     sudo apt install python3 python3-pip
+     ```
+   - Install GTK for WeasyPrint:
+     ```
+     sudo apt install libgirepository1.0-dev gcc libcairo2-dev pkg-config python3-dev gir1.2-gtk-3.0
+     ```
+
+2. **Clone the Repository**:
+   - Clone the WebVault repository from GitHub:
+     ```
+     git clone [URL to WebVault repository]
+     cd WebVault
+     ```
+
+3. **Setup a Python Virtual Environment** (recommended):
+   - Create and activate a virtual environment:
+     ```
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+
+4. **Install Python Dependencies**:
+   - Install the required Python packages using pip:
+     ```
+     pip install -r requirements.txt
+     ```
+
+5. **Configure Environment Variables**:
+   - Set up necessary environment variables, such as `FLASK_APP` and `FLASK_ENV`, and any other configurations specific to your setup.
+
+6. **Initialize the Database**:
+   - Run the initialization script provided in the repository to set up your database schemas:
+     ```
+     python run.py init_db
+     ```
+
+7. **Run the Application**:
+   - Start the Flask application:
+     ```
+     flask run
+     ```
+
+Visit `http://localhost:5000` in your web browser to start using WebVault.
