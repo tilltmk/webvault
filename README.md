@@ -93,7 +93,7 @@ Follow these steps to set up WebVault on a Linux system:
    - Clone the WebVault repository from GitHub:
      ```
      git clone https://github.com/tilltmk/webvault
-     cd WebVault
+     cd webvault
      ```
 
 3. **Setup a Python Virtual Environment** (recommended):
