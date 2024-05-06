@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="text-center text-success">{{ website.url }}</h2>
+    <p class="text-center">Version: {{ website.version }}</p>
+    <div class="text-center">
+        <iframe src="{{ url_for('static', filename='archived_websites/' + website.domain + '/' + website.version|string + '/index.html') }}" width="100%" height="600px"></iframe>
+        <a href="{{ url_for('static', filename='archived_websites/' + website.domain + '/' + website.version|string + '/website.pdf') }}" target="_blank" class="btn btn-success mt-3">View PDF</a>
+    </div>
+{% endblock %}

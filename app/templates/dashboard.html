@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="text-center text-success">Dashboard</h2>
+    <form method="POST" action="{{ url_for('main.add_website') }}">
+        <div class="mb-3">
+            <label for="url" class="form-label">Website URL</label>
+            <input type="url" class="form-control" id="url" name="url" required>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success">Add Website</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <h3 class="text-center text-success">Archived Websites</h3>
+    <ul class="list-group">
+        {% for website in websites %}
+            <li class="list-group-item bg-dark text-light">
+                <a href="{{ url_for('main.view_website', website_id=website.id) }}" class="text-success">{{ website.url }}</a>
+                <span class="badge bg-success">Version {{ website.version }}</span>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

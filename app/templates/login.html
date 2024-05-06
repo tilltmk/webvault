@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="text-center">
+        <h1 class="text-success">Welcome to WebVault</h1>
+        <p>Archive and browse websites with ease.</p>
+        {% if not current_user.is_authenticated %}
+            <a href="{{ url_for('main.login') }}" class="btn btn-success">Login</a>
+            <a href="{{ url_for('main.register') }}" class="btn btn-outline-success">Register</a>
+        {% endif %}
+    </div>
+{% endblock %}
